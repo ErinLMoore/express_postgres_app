@@ -14,3 +14,12 @@ exports.index = function (req, res, next) {
     .then((bets) => res.send(bets))
     .catch((err) => res.status(400).json({ err: `Error listing bets ${err}` }));
 };
+
+exports.bet_create_post = function (req, res, next) {
+  var amount = req.body.amount;
+  var teamName = req.body.teamName;
+  console.log(req.body);
+  Bet.create({ teamName: teamName, amount: amount })
+    .then((bet) => res.send({ message: "bet created successfully", bet: bet }))
+    .catch((err) => res.status(400).json({ err: `Error listing bets ${err}` }));
+};

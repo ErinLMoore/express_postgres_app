@@ -17,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
   Bet.init(
     {
       amount: DataTypes.INTEGER,
+      teamName: DataTypes.STRING,
     },
     {
       sequelize,
