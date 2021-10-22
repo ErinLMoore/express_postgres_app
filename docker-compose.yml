@@ -1,11 +1,11 @@
-version: '3'
+version: "3"
 services:
   postgres:
     image: postgres:14.0
     container_name: postgres
     ports:
-    - 5432:5432
+      - 5432:5432
     volumes:
-    - /data/postgres:/data/postgres
+      - /data/postgres:/data/postgres
     env_file:
-    - docker.env
+      - docker.env

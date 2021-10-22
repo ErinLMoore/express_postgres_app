@@ -4,7 +4,8 @@
   "description": "small app with all the cool routes",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,11 @@
   },
   "homepage": "https://github.com/ErinLMoore/express_postgres_app#readme",
   "devDependencies": {
+    "prettier": "2.4.1",
     "sequelize-cli": "^6.2.0"
   },
   "dependencies": {
+    "pg": "^8.7.1",
     "sequelize": "^6.7.0"
   }
 }
