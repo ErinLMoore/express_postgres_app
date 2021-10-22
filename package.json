@@ -1,0 +1,25 @@
+{
+  "name": "express_postgres_app",
+  "version": "1.0.0",
+  "description": "small app with all the cool routes",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErinLMoore/express_postgres_app.git"
+  },
+  "author": "Erin L Moore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErinLMoore/express_postgres_app/issues"
+  },
+  "homepage": "https://github.com/ErinLMoore/express_postgres_app#readme",
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "sequelize": "^6.7.0"
+  }
+}
