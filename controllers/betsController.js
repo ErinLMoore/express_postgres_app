@@ -23,3 +23,12 @@ exports.bet_create_post = function (req, res, next) {
     .then((bet) => res.send({ message: "bet created successfully", bet: bet }))
     .catch((err) => res.status(400).json({ err: `Error listing bets ${err}` }));
 };
+
+exports.bet_delete_post = function (req, res, next) {
+  var bet_id = req.params.id;
+  Bet.destroy({ where: { id: bet_id } })
+    .then((bet) =>
+      res.send({ message: "bet destroyed successfully", bet: bet })
+    )
+    .catch((err) => res.status(400).json({ err: `Error deleting ${err}` }));
+};
