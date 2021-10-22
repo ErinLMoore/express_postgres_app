@@ -8,4 +8,4 @@ services:
     volumes:
       - /data/postgres:/data/postgres
     env_file:
-      - docker.env
+      - docker.dev.env
